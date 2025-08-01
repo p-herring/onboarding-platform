@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New User Onboarding | Strategic Group</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 30px auto;
+      width: 160px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2f2f2f;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #2f2f2f;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #8e1f3e;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #6c1a30;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .tag {
+      background-color: #e4e4e4;
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+    }
+
+    .tag span {
+      margin-left: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #8e1f3e;
+    }
+
+    .dropdown-container {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .dropdown-btn {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: left;
+      background-color: #fff;
+    }
+
+    .dropdown-list {
+      position: absolute;
+      width: 100%;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      max-height: 150px;
+      overflow-y: auto;
+      z-index: 100;
+      display: none;
+    }
+
+    .dropdown-list div {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .dropdown-list div:hover {
+      background-color: #f0f0f0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #888;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/static/logo.png" alt="Strategic Group Logo" class="logo" />
+    <h2>User Onboarding Portal</h2>
+    <form id="onboard-form">
+      <label>First Name</label>
+      <input type="text" name="first_name" required />
+
+      <label>Last Name</label>
+      <input type="text" name="last_name" required />
+
+      <label>Position Description</label>
+      <input type="text" name="position_description" required />
+
+      <label>License type</label>
+      <select name="license_type" required>
+        <option value="">Select a license type...</option>
+        <option value="Standard">Standard</option>
+        <option value="Manager">Manager</option>
+      </select>
+
+      <div id="features-section" style="display: none;">
+        <label>Additional Features</label>
+        <div class="dropdown-container">
+          <div class="dropdown-btn" onclick="toggleDropdown()">Select features...</div>
+          <div class="dropdown-list" id="dropdown-list"></div>
+        </div>
+        <div class="tag-container" id="tag-container"></div>
+      </div>
+
+      <input type="submit" value="Provision User" />
+    </form>
+    <footer>&copy; 2025 Strategic Group. All rights reserved.</footer>
+  </div>
+
+  <script>
+    const form = document.getElementById("onboard-form");
+    const dropdownList = document.getElementById("dropdown-list");
+    const tagContainer = document.getElementById("tag-container");
+    const selectedFeatures = new Set();
+
+    function toggleDropdown() {
+      dropdownList.style.display = dropdownList.style.display === "block" ? "none" : "block";
+    }
+
+    function addTag(value, label) {
+      if (selectedFeatures.has(value)) return;
+      selectedFeatures.add(value);
+
+      const tag = document.createElement("div");
+      tag.className = "tag";
+      tag.innerHTML = `${label} <span onclick="removeTag(this, '${value}')">&times;</span>`;
+      tag.dataset.value = value;
+      tagContainer.appendChild(tag);
+    }
+
+    function removeTag(el, value) {
+      selectedFeatures.delete(value);
+      el.parentElement.remove();
+    }
+
+    fetch("/api/client_config")
+      .then(res => res.json())
+      .then(data => {
+        if (data.features) {
+          document.getElementById("features-section").style.display = "block";
+          Object.entries(data.features).forEach(([value, label]) => {
+            const item = document.createElement("div");
+            item.textContent = label;
+            item.onclick = () => {
+              addTag(value, label);
+              dropdownList.style.display = "none";
+            };
+            dropdownList.appendChild(item);
+          });
+        }
+      });
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      formData.append("selected_features", JSON.stringify([...selectedFeatures]));
+
+      const response = await fetch("/api/provision_user", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+      window.location.href = `/success?status=${result.status}&user=${result.user}`;
+    });
+
+    // Close dropdown on outside click
+    window.addEventListener("click", function(e) {
+      if (!e.target.closest(".dropdown-container")) {
+        dropdownList.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

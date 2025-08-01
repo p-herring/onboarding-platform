@@ -1,0 +1,58 @@
+<!-- /templates/success.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Provisioning Complete</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 40px 50px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      width: 140px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #2f2f2f;
+    }
+    p {
+      color: #555;
+    }
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      color: white;
+      background: #8e1f3e;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      background: #6c1a30;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/static/logo.png" alt="Logo" class="logo" />
+    <h2>Success!</h2>
+    <p>User <strong>{{ user }}</strong> has been provisioned successfully.</p>
+    <a href="/">Back to Dashboard</a>
+  </div>
+</body>
+</html>

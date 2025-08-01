@@ -2,7 +2,7 @@
     "company": "ACME Accounting",
     "domain": "acme.onmicrosoft.com",
     "default_password": "AcmeTemp2025!",
-    "roles": {
+    "license_types": {
         "Standard": {
             "licenses": ["business_premium_sku_id"],
             "groups": ["fake_group_id_staff", "fake_group_id_sharepoint"]
@@ -12,6 +12,17 @@
             "groups": ["fake_group_id_staff", "fake_group_id_managers"]
         }
     },
+    "features": {
+        "8x8": {
+          "description": "Phone system provisioning via 8x8"
+        },
+        "PaperCut": {
+          "description": "Enable print management via PaperCut"
+        },
+        "LastPass": {
+          "description": "Create secure vault in LastPass"
+        }
+      },
     "security": {
         "mfa_required": true,
         "intune_group": "fake_group_id_intune_devices"

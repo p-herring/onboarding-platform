@@ -1,0 +1,3 @@
+timestamp,email,role,requested_by,status,error2025-08-01T06:55:12.653413Z,test.one@acme.onmicrosoft.com,Standard,hr@acme.com,success,
+2025-08-01T07:36:52.891072Z,test.two@acme.onmicrosoft.com,Standard,hr@acme.com,error,'license_type'
+2025-08-01T07:38:00.191002Z,test.four@acme.onmicrosoft.com,Standard,hr@acme.com,error,'license_type'

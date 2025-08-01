@@ -1,77 +1,13 @@
-{"user": "peter.herring@acme.onmicrosoft.com", "role": "Standard", "groups": ["fake_group_id_staff", "fake_group_id_sharepoint"], "licenses": ["business_premium_sku_id"]}
-{"user": "test.two@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.five@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.five@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.five@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.four@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.six@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
-{"user": "test.six@acme.onmicrosoft.com", "role": "Standard", "by": "hr@acme.com"}
+{"timestamp": "2025-08-01T05:17:58.391157Z", "status": "duplicate", "user": "test.one@acme.onmicrosoft.com", "role": "Standard", "requested_by": "hr@acme.com"}
+{"timestamp": "2025-08-01T05:19:01.027726Z", "status": "success", "user": "test.two@acme.onmicrosoft.com", "role": "Standard", "requested_by": "hr@acme.com"}
+{"timestamp": "2025-08-01T05:20:30.887533Z", "status": "success", "user": "test.three@acme.onmicrosoft.com", "role": "Standard", "requested_by": "hr@acme.com"}
+{"timestamp": "2025-08-01T05:21:26.477328Z", "status": "success", "user": "test.four@acme.onmicrosoft.com", "role": "Standard", "requested_by": "hr@acme.com"}
+{"timestamp": "2025-08-01T05:23:30.965546Z", "status": "success", "user": "test .four@acme.onmicrosoft.com", "role": "Standard", "requested_by": "hr@acme.com"}
+{"timestamp": "2025-08-01T05:23:47.868818Z", "status": "duplicate", "user": "test .four@acme.onmicrosoft.com", "role": "Standard", "requested_by": "hr@acme.com"}
+{"timestamp": "2025-08-01T06:50:42.999119Z", "status": "success", "user": "peter.test1@acme.onmicrosoft.com", "role": "Standard", "requested_by": "hr@acme.com"}
+{"timestamp": "2025-08-01T06:52:04.899619Z", "status": "success", "user": "peter.test2@acme.onmicrosoft.com", "role": "Standard", "requested_by": "hr@acme.com"}
+{"timestamp": "2025-08-01T06:52:51.894342Z", "status": "success", "user": "testing.1@acme.onmicrosoft.com", "role": "Standard", "requested_by": "hr@acme.com"}
+{"timestamp": "2025-08-01T06:54:21.443030Z", "status": "success", "user": "testing.2@acme.onmicrosoft.com", "role": "Standard", "requested_by": "hr@acme.com"}
+{"timestamp": "2025-08-01T06:55:12.653413Z", "status": "success", "user": "test.one@acme.onmicrosoft.com", "role": "Standard", "requested_by": "hr@acme.com"}
+{"timestamp": "2025-08-01T07:36:52.891072Z", "status": "error", "user": "test.two@acme.onmicrosoft.com", "license_type": "Standard", "requested_by": "hr@acme.com", "error": "'license_type'"}
+{"timestamp": "2025-08-01T07:38:00.191002Z", "status": "error", "user": "test.four@acme.onmicrosoft.com", "license_type": "Standard", "requested_by": "hr@acme.com", "error": "'license_type'"}
