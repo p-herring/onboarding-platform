@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Provisioned</title>
+</head>
+<body>
+  <h2>✅ User Provisioned Successfully!</h2>
+  <p id="result-text"></p>
+  <a href="index.html">Create another user</a>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const email = params.get('user');
+    const status = params.get('status');
+
+    if (status === 'Provisioned') {
+      document.getElementById('result-text').textContent =
+        `User ${email} has been provisioned successfully.`;
+    } else {
+      document.getElementById('result-text').textContent =
+        'Something went wrong.';
+    }
+  </script>
+</body>
+</html>

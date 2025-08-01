@@ -1,0 +1,19 @@
+{
+    "company": "ACME Accounting",
+    "domain": "acme.onmicrosoft.com",
+    "default_password": "AcmeTemp2025!",
+    "roles": {
+        "Standard": {
+            "licenses": ["business_premium_sku_id"],
+            "groups": ["fake_group_id_staff", "fake_group_id_sharepoint"]
+        },
+        "Manager": {
+            "licenses": ["business_premium_sku_id", "power_bi_sku_id"],
+            "groups": ["fake_group_id_staff", "fake_group_id_managers"]
+        }
+    },
+    "security": {
+        "mfa_required": true,
+        "intune_group": "fake_group_id_intune_devices"
+    }
+}
